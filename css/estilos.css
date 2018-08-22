@@ -1,0 +1,191 @@
+body {
+    background: lightblue;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://img00.deviantart.net/f08d/i/2016/109/3/b/sp___random_street_background_by_lolwutburger-d9zgcqa.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.sopark {
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+}
+
+.kenny {
+    left: 0;
+    bottom: 0;
+    animation-name: caminar, pasos;
+    animation-delay: .5s;
+    animation-duration: 5s, .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+
+.jefferson {
+    left: 950px;
+    bottom: 0;
+    position: relative;
+    opacity: 0;
+    animation-name: saludar;
+    animation-delay: 3.5s;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.jefferson2 {
+    left: 430px;
+    bottom: 252px;
+    position: relative;
+    opacity: 0;
+    animation-name: bailar;
+    animation-delay: 12s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.jackson {
+    left: 450px;
+    bottom: 120px;
+    position: relative;
+    animation-name: aparecer;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes caminar {
+    0% {
+        left: 0;
+    }
+    70% {
+        left: 700px;
+    }
+    100% {
+        left: 700px;
+    }
+}
+
+@keyframes pasos {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes saludar {
+    0% {
+        opacity: 0;
+        left: 950px;
+        transform: rotate(0);
+    }
+    20% {
+        opacity: 1;
+        left: 800px;
+        transform: rotate(-10deg) rotateY(0);
+    }
+    80% {
+        opacity: 1;
+        left: 800px;
+        transform: rotate(-10deg) rotateY(0);
+    }
+    100% {
+        opacity: 0;
+        left: 950px;
+        transform: rotate(-10deg) rotateY(720deg);       
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @keyframes bailar {
+    0% {
+        left: 430px;
+        bottom: 252px;
+        opacity: 0;
+        transform: rotateY(0deg);
+    }
+    10% {
+        left: 420px;
+        bottom: 252px;
+        opacity: 1;
+    }
+    90% {
+        left: 130px;
+        opacity: 1;
+    }
+    100% {
+        left: 110px;
+        opacity: 0;
+        transform: rotateY(7200deg);
+    }
+} */
+
+@keyframes bailar {
+    0% {
+        opacity: 0;
+        transform: translate(0) rotateY(0deg);
+    }
+    5% {
+        opacity: 1;
+        transform: translate(-10px) rotateY(0deg);
+    }
+
+    35% {
+        transform: translate(-110px) rotateY(1980deg);
+    }
+
+
+    45% {
+        transform: translate(-143px) rotateY(1980deg);
+    }
+
+    46%{
+        transform: translate(-140px) rotateY(1980deg);
+    }
+
+    55% {
+        transform: translate(-177px) rotateY(1980deg);
+    }
+    56% {
+        transform: translate(-174px) rotateY(1980deg);
+    }
+
+
+    65% {
+        transform: translate(-210px) rotateY(1980deg);
+    }
+
+    95% {
+        opacity: 1;
+        transform: translate(-310px) rotateY(3600deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-320px) rotateY(3600deg);
+    }
+}
